@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@100;300;400;500;600&family=Raleway&family=Roboto+Mono:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: 0.2 ease;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(255, 253, 253);
+}
+/* !!! Header başlangıç */
+.header{
+    margin: 0 9%;
+    padding: 0 4%;
+    text-align: center;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 10rem;
+    width: 80%;
+}
+.logo img{
+    width: 11rem;
+    height: 11rem;
+}
+.header .navbar{
+    display: block;
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    color: #ffffff;
+    border-bottom: 0.1rem solid transparent;
+
+}
+.header .navbar .active,
+.header .navbar a:hover{
+    color: rgba(236, 15, 15, 0.911);
+    font-weight: 600;
+}
+.icons a i:hover{
+    color: red;
+}
+.icons{
+    display: flex;
+    position: relative;
+    left: 5px;
+    top: 2px;
+    gap: 12px;
+
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    
+}
+.yazi{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+    display: none;
+}
+/* !Header Son */
+/* !Section Home Başlangıç */
+.home{
+    min-height: 100vh;
+    background: url(image/kapak3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -10.1rem;
+    display: flex;
+    align-items: center;
+}
+.icerik{
+    max-width: 57rem;
+    position: absolute;
+    display: block;
+    top: 41%;
+    margin-left: 11rem;
+}
+
+.icerik h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+.icerik p{
+    font-size: 1.7rem;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+.button{
+    border-radius: 30rem;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding: 0.9rem;
+    background-color: red;
+}
+/* !Section Home Son */
+/* !Section Ekonomik Menü */
+.menu h1{
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+    border-bottom: solid 2px rgb(255, 0, 0);
+    box-shadow: red;
+}
+.menu .kapsayici-kutu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+ }
+ .menu .kapsayici-kutu .kutu1{
+    padding: 3rem;
+    background:url(image/ekonomik-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    min-height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 1rem;
+ }
+ .menu .kapsayici-kutu .kutu2{
+    padding: 3rem;
+    background:url(image/ekonomik-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    min-height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 1rem;
+ }    
+ .menu .kapsayici-kutu .kutu3{
+    padding: 3rem;
+    background:url(image/ekonomik-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    min-height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 1rem;
+ }   
+ .menu .kapsayici-kutu .kutu4{
+    padding: 3rem;
+    background:url(image/ekonomik-4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    min-height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 1rem;
+ }    
+ .menu .kapsayici-kutu .kutu img{
+    width: 100%;
+    object-fit: cover;
+ }
+ .menu .kapsayici-kutu .kutu-icerik{
+    display: inline-block;
+    position: relative;
+    top: 35rem;
+    left: 15rem;
+    max-width: 14rem;
+ }
+ .menu .kapsayici-kutu .kutu-icerik span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+ }
+ .tutar{
+    color: #ffffff;
+    text-decoration:line-through;
+    margin-right: 0.3rem;
+ }
+ .menu .kapsayici-kutu .kutu span{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+
+ }
+ .menu .kapsayici-kutu .kutu .tutar{
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+ }
+ .menu .kapsayici-kutu .kutu .tutar span{
+    text-decoration: line-through;
+    font-size: 1.5rem;
+    font-weight: 300;
+ }
